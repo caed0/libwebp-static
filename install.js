@@ -23,11 +23,11 @@ for (const [key, value] of Object.entries(PRECOMPILED_BINARIES)) {
     const binaryUrl = `${BASE_URL}${file}`;
 
     try {
+        if (!fs.existsSync(`binaries/${platform}`)) fs.mkdirSync(`binaries/${platform}`, { recursive: true });
         execSync(`curl -s -L ${binaryUrl} --output binaries/${file}`, { stdio: "inherit" });
 
-        if (!fs.existsSync(`binaries/${platform}`)) fs.mkdirSync(`binaries/${platform}`, { recursive: true });
-
-        if (file.endsWith(".zip")) execSync(`unzip -qo binaries/${file} -d binaries/${platform}`, { stdio: "inherit" });
+        if (process.platform !== "win32" && file.endsWith(".zip"))
+            execSync(`unzip -qo binaries/${file} -d binaries/${platform}`, { stdio: "inherit" });
         else execSync(`tar -xzf binaries/${file} -C binaries/${platform}`, { stdio: "inherit" });
         if (fs.existsSync(`binaries/${file}`)) fs.unlinkSync(`binaries/${file}`);
 
@@ -37,5 +37,6 @@ for (const [key, value] of Object.entries(PRECOMPILED_BINARIES)) {
     } catch (error) {
         if (fs.existsSync("binaries")) fs.rmdirSync("binaries", { recursive: true });
         console.error("Failed to download prebuilt binary:", error);
+        process.exit(1);
     }
 }
