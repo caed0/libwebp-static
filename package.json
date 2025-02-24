@@ -1,6 +1,6 @@
 {
   "name": "libwebp-static",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "libwebp binaries for macOS, Linux and Windows",
   "main": "index.js",
   "scripts": {
@@ -11,11 +11,26 @@
     "url": "https://github.com/caed0/libwebp-static"
   },
   "keywords": [
-    "webp", "webp-static", "libwebp", "webp-binary", "webp-tools",
-    "cwebp", "dwebp", "image-compression", "image-converter",
-    "lossless-webp", "webp-optimizer", "static-webp", "webp-cli",
-    "webp-nodejs", "node-webp", "webp-wrapper", "webp-encoder",
-    "webp-decoder", "webp-utils", "cross-platform-webp"
+    "webp",
+    "webp-static",
+    "libwebp",
+    "webp-binary",
+    "webp-tools",
+    "cwebp",
+    "dwebp",
+    "image-compression",
+    "image-converter",
+    "lossless-webp",
+    "webp-optimizer",
+    "static-webp",
+    "webp-cli",
+    "webp-nodejs",
+    "node-webp",
+    "webp-wrapper",
+    "webp-encoder",
+    "webp-decoder",
+    "webp-utils",
+    "cross-platform-webp"
   ],
   "author": "caed0",
   "license": "GPL-3.0-or-later",
