@@ -1,0 +1,4 @@
+node_modules/
+binaries/
+.idea/
+package-lock.json
