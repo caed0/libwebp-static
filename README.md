@@ -98,12 +98,7 @@ All tools are available as properties of the exported object:
 
 This project is licensed under the **GPL-3.0-or-later License** - see the [LICENSE](LICENSE) file for details.
 
-### Third-party Licenses
-
-The included WebP binaries are developed by Google and are subject to their own licensing terms:
-- **WebP Library**: BSD-3-Clause License
-- **Source Code**: [Chromium WebP Repository](https://chromium.googlesource.com/webm/libwebp/)
-- **License Details**: [WebP COPYING file](https://chromium.googlesource.com/webm/libwebp/+/refs/heads/main/COPYING)
+The libwebp library is licensed under a separate license. For more information, please refer to the [libwebp license](https://github.com/webmproject/libwebp/blob/main/COPYING).
 
 ## 🙏 Acknowledgments
 
