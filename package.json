@@ -1,6 +1,6 @@
 {
   "name": "libwebp-static",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "libwebp binaries for macOS, Linux and Windows",
   "main": "index.js",
   "scripts": {
