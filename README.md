@@ -1,4 +1,4 @@
-# libwebp-static
+  # libwebp-static
 
 [![NPM Version](https://img.shields.io/npm/v/libwebp-static?style=for-the-badge)](https://www.npmjs.com/package/libwebp-static)
 [![NPM Downloads](https://img.shields.io/npm/d18m/libwebp-static?style=for-the-badge)](https://www.npmjs.com/package/libwebp-static)
@@ -99,9 +99,3 @@ All tools are available as properties of the exported object:
 This project is licensed under the **GPL-3.0-or-later License** - see the [LICENSE](LICENSE) file for details.
 
 The libwebp library is licensed under a separate license. For more information, please refer to the [libwebp license](https://github.com/webmproject/libwebp/blob/main/COPYING).
-
-## 🙏 Acknowledgments
-
-- Google WebP team for the excellent WebP library
-- Contributors and users of this package
-- The Node.js community for inspiration and best practices
